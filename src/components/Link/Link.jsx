@@ -11,6 +11,8 @@ const Link = ({ route }) => {
     )
 }
 
-Link.propTypes = {}
+Link.propTypes = {
+    route : PropTypes.object.isRequired,
+}
 
 export default Link

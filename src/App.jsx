@@ -6,8 +6,8 @@ function App() {
 
   return (
     <>
-      {/* <Navbar></Navbar> */}
       <CSNav></CSNav>
+      <Navbar></Navbar>
     </>
   )
 }
