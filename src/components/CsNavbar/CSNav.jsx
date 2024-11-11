@@ -17,7 +17,7 @@ const CSNav = () => {
     // export default routes;
 
     return (
-        <nav>
+        <nav className='md:w-10/12 mx-auto'>
             <div className='md:hidden text-2xl' onClick={() => setOpen(!open)}>
                 {
                     open === true ?
@@ -25,7 +25,8 @@ const CSNav = () => {
                         <HiMenuAlt1 ></HiMenuAlt1>
                 }
             </div>
-            <ul className={`md:flex absolute bg-red-600 p-5 text-white z-10 ${open ? '' : 'hidden'}`}>
+            <ul className={`md:flex duration-1000 absolute shadow-lg md:static bg-red-600 p-5 text-white z-10 
+                ${open ? 'top-9' : '-top-60'}`}>
                 {
                     routes.map((route, idx) => <Link key={idx} route={route}></Link>)
                 }

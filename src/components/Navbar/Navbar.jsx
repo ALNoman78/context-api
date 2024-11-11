@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 
 const Navbar = () => {
     return (
-        <div>
+        <div className='md:w-10/12 mx-auto'>
             <div className="navbar bg-base-100">
                 <div className="navbar-start">
                     <div className="dropdown">
