@@ -25,7 +25,7 @@ const CSNav = () => {
                         <HiMenuAlt1 ></HiMenuAlt1>
                 }
             </div>
-            <ul className='md:flex gap-5 items-center absolute bg-red-600 p-5 text-white'>
+            <ul className={`md:flex absolute bg-red-600 p-5 text-white z-10 ${open ? '' : 'hidden'}`}>
                 {
                     routes.map((route, idx) => <Link key={idx} route={route}></Link>)
                 }
