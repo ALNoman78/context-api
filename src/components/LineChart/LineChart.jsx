@@ -1,5 +1,5 @@
 // import { LineChart as LChart, Line, XAxis, YAxis } from 'recharts';
-import {BarChart, Bar,Cell,XAxis, YAxis, CartesianGrid, Tooltip,Legend,LabelList, ResponsiveContainer,} from 'recharts';
+import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, LabelList, ResponsiveContainer, } from 'recharts';
 import React from 'react'
 import PropTypes from 'prop-types'
 
@@ -20,13 +20,14 @@ const LineChart = (props) => {
 
     return (
         <div>
-            <BarChart width={800} height={400} data={studentsData}>
-                <XAxis dataKey="name" />
-                <YAxis></YAxis>
-                <Bar dataKey='mathMarks' fill='#8884d8'></Bar>
-                <Bar dataKey='physicsMarks' fill="#82ca9d"></Bar>
-                <Bar dataKey='chemistryMarks' fill='steelblue'></Bar>
-            </BarChart>
+                <BarChart width={800} height={400} data={studentsData}>
+                    <XAxis dataKey="name" />
+                    <YAxis></YAxis>
+                    <Tooltip></Tooltip>
+                    <Bar dataKey='mathMarks' fill='#8884d8'></Bar>
+                    <Bar dataKey='physicsMarks' fill="#82ca9d"></Bar>
+                    <Bar dataKey='chemistryMarks' fill='steelblue'></Bar>
+                </BarChart>
         </div>
     )
 }
