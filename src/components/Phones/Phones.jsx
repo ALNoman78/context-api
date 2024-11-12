@@ -27,12 +27,12 @@ const Phones = () => {
     return (
         <div>
             <h3 className='text-5xl font-bold text-center'>Phone : {phone.length}</h3>
-                <BarChart width={1800} height={400} data={phone}>
-                    <Bar dataKey="price" fill="#8884d8" />
-                    <XAxis dataKey='name'></XAxis>
-                    <YAxis></YAxis>
-                    <Tooltip></Tooltip>
-                </BarChart>
+            <BarChart width={1800} height={400} data={phone}>
+                <Bar dataKey="price" fill="#8884d8" />
+                <XAxis dataKey='name'></XAxis>
+                <YAxis></YAxis>
+                <Tooltip></Tooltip>
+            </BarChart>
         </div>
     )
 }
