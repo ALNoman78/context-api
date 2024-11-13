@@ -10,7 +10,6 @@ function App() {
   return (
     <>
       <CSNav></CSNav>
-      {/* <Navbar></Navbar> */}
       <PriceOptions></PriceOptions>
       <LineChart></LineChart>
       <Phones></Phones>
