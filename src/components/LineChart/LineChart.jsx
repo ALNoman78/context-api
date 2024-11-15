@@ -3,7 +3,7 @@ import { BarChart, Bar, Cell, XAxis, YAxis, CartesianGrid, Tooltip, Legend, Labe
 import React from 'react'
 import PropTypes from 'prop-types'
 
-const LineChart = (props) => {
+const LineChart = () => {
 
     const studentsData = [
         { id: 1, name: "Noman", mathMarks: 78, physicsMarks: 82, chemistryMarks: 75 },
